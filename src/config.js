@@ -51,7 +51,7 @@ export const config = {
   isProd,
   port: int('PORT', 3000),
   host: env('HOST', '0.0.0.0'),
-  publicUrl: env('PUBLIC_URL', 'http://localhost:' + int('PORT', 3000)).replace(/\/$/, ''),
+  publicUrl: env('PUBLIC_URL', env('RENDER_EXTERNAL_URL', 'http://localhost:' + int('PORT', 3000))).replace(/\/$/, ''),
   dataDir,
   dbFile: path.join(dataDir, env('DB_FILE', 'medassist.db')),
   uploadDir: path.join(dataDir, 'uploads'),
