@@ -1,0 +1,4 @@
+MIT License
+
+QRCode for JavaScript — Copyright (c) 2009 Kazuhiko Arase
+http://www.d-project.com/  (via qrcode-terminal, Apache-2.0 wrapper)
